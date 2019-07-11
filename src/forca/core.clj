@@ -34,8 +34,7 @@
           (if (acertou? chute palavra)
               (do
                   (println "Acertou a letra!")
-                  (recur vidas palavra (conj acertos chute))
-              )
+                  (recur vidas palavra (conj acertos chute)))
               (do
                   (println "Errou a letra!")
                   (recur (dec vidas) palavra acertos))))))
